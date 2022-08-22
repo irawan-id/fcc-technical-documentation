@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300&family=Montserrat&family=Poppins:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, arial, sans-serif;
+    display: flex;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+main header,
+nav header {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+/* Navbar */
+
+nav {
+    border-right: 3px solid #444;
+    padding: 20px;
+}
+
+nav a {
+    display: block;
+    border-top: 1px solid #333;
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* Main */
+
+main {
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+/* Media Query HP */
+
+@media only screen and (max-width: 576px) {
+    body {
+        flex-direction: column;
+    }
+    nav {
+        height: 200px;
+        border-bottom: 3px solid #444;
+        overflow-y: scroll;
+    }
+    main {
+        overflow-y: unset;
+    }
+}
